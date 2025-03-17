@@ -51,14 +51,17 @@
             padding: 1em;
             background-color: black;
             color: white;
-            opacity: 0; /* Sets the link 's opacity to 0, making it fully transparent and invisible. */
+            top: auto;
+            width: 1px;
+            height: 1px;
+            overflow: hidden;
         }
 
         #skip-to-main:focus {
             left: 50%; /* When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen. */
             transform: translateX(-50%); /* This centres the link horizontally by moving it back to the left by 50% of its own width. */
-            opacity: 1; /* The link's opacity is set to 1, making it fully visible. */
-
+            width:auto;
+            height:auto;
         }
 
     </style>
