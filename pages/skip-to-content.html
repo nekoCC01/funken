@@ -15,6 +15,15 @@
             padding: 2rem;
             margin-block: 2rem;
         }
+        #space-between {
+            background-color: black;
+            color: white;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 500px;
+            margin-bottom: 2rem;
+        }
         main {
             background-color: antiquewhite;
             padding: 2rem;
@@ -32,20 +41,22 @@
         /*****************************************************************
         * Skip Button
         *****************************************************************/
-        .screenreader-only {
+        #skip-to-main {
             position:absolute;
             left:-10000px;
-            top:auto;
-            width:1px;
-            height:1px;
-            overflow:hidden;
+            opacity:0;
+        }
+        #skip-to-main:focus {
+            left: 0;
+            position: relative;
+            opacity: 1;
         }
 
     </style>
 </head>
 <body>
 <div class="container">
-    <a class="screenreader-only" href="">SKIP TO MAIN CONTENT</a>
+    <a id="skip-to-main" href="#main-content">SKIP TO MAIN CONTENT</a>
     <header>
         <nav>
             <ul>
@@ -55,7 +66,10 @@
             </ul>
         </nav>
     </header>
-    <main>
+    <div id="space-between">
+        FÜLLRAUM zwischen Header und Main
+    </div>
+    <main id="main-content">
         <h1>Main Content</h1>
         <section>
             <h2>Section1</h2>
