@@ -10,25 +10,28 @@
             max-inline-size: 750px;
             margin-block: 1rem;
         }
+
         header {
             background-color: aliceblue;
             padding: 2rem;
             margin-block: 2rem;
         }
+
         #space-between {
-            background-color: black;
-            color: white;
+            background-color: cornsilk ;
             display: flex;
             justify-content: center;
             align-items: center;
             height: 500px;
             margin-bottom: 2rem;
         }
+
         main {
             background-color: antiquewhite;
             padding: 2rem;
 
         }
+
         nav ul {
             list-style: none;
             display: flex;
@@ -42,14 +45,20 @@
         * Skip Button
         *****************************************************************/
         #skip-to-main {
-            position:absolute;
-            left:-10000px;
-            opacity:0;
+            position: absolute; /* Positions the link absolutely on the page, allowing it to be placed anywhere. */
+            left: -9999px; /* Moves the link far off-screen to the left, making it invisible to sighted users. */
+            z-index: 999; /* Sets a high z-index, ensuring that the link will be on top of other page elements if it becomes visible. */
+            padding: 1em;
+            background-color: black;
+            color: white;
+            opacity: 0; /* Sets the link 's opacity to 0, making it fully transparent and invisible. */
         }
+
         #skip-to-main:focus {
-            left: 0;
-            position: relative;
-            opacity: 1;
+            left: 50%; /* When the link receives focus (e.g., when a keyboard user tabs to it), it is repositioned horizontally to the centre of the screen. */
+            transform: translateX(-50%); /* This centres the link horizontally by moving it back to the left by 50% of its own width. */
+            opacity: 1; /* The link's opacity is set to 1, making it fully visible. */
+
         }
 
     </style>
@@ -69,14 +78,26 @@
     <div id="space-between">
         FÜLLRAUM zwischen Header und Main
     </div>
-    <main id="main-content">
+    <main id="main-content" tabindex="-1">
         <h1>Main Content</h1>
         <section>
             <h2>Section1</h2>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</section>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </section>
         <section>
             <h2>Section2</h2>
-            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</section>
+            Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et
+            dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet
+            clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet,
+            consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat,
+            sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no
+            sea takimata sanctus est Lorem ipsum dolor sit amet.
+        </section>
     </main>
 </div>
 
