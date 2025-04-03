@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Charlottes Blog</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            font-family: sans-serif;
+            line-height: 1.6;
+        }
+
+        nav {
+            background: black;
+            padding: 1em;
+            text-align: center;
+
+        }
+
+        nav a {
+            margin: 0 1em;
+            text-decoration: none;
+            color: white;
+        }
+
+        .hero-image img {
+            width: 100%;
+            height: auto;
+            display: block;
+        }
+
+        .intro {
+            text-align: center;
+            padding: 1em;
+        }
+
+        .profile {
+            border-radius: 50%;
+            margin-top: 0.5em;
+        }
+
+        main {
+            padding: 2em;
+        }
+
+        section {
+            margin-bottom: 3em;
+        }
+
+        footer {
+            text-align: center;
+            padding: 2em;
+            background: black;
+            margin-top: 2em;
+            color: white;
+        }
+
+        section {
+            padding: 20px;
+        }
+        .colored {
+            background-color: #4BB5C1;
+        }
+        .with-sidebar {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .with-sidebar > :first-child {
+            flex-basis: 400px;
+            flex-grow: 1;
+        }
+
+        .with-sidebar > :last-child {
+            flex-basis: 0;
+            flex-grow: 999;
+            min-inline-size: 50%;
+        }
+
+        .with-sidebar img {
+            max-width: 100%;
+            height: auto;
+        }
+
+
+    </style>
+</head>
+<body>
+
+<header>
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#week1">Week 1</a>
+        <a href="#week2">Week 2</a>
+    </nav>
+    <div class="hero-image">
+        <img src="https://picsum.photos/1800/450" alt="Hero">
+    </div>
+    <div class="intro">
+        <h1 id="home">My Blog</h1>
+        <img class="profile" src="https://picsum.photos/300/400" alt="Profile">
+        <p>Willkommen auf meinem Blog!</p>
+    </div>
+</header>
+
+<main>
+
+    <section>
+        <h2>Now watching...</h2>
+        <div class="wse-widget"><a rel="noopener" href="https://www.werstreamt.es/serie/details/232667/criminal-minds/"
+                                   target="_blank">Verfügbarkeit von Criminal Minds auf WerStreamt.es prüfen</a>
+            <script async src="https://www.werstreamt.es/_resources/themes/wse/js/widget.v4.min.js"
+                    charset="utf-8"></script>
+        </div>
+    </section>
+
+    <section id="week1" class="colored with-sidebar">
+
+        <div>
+            <img src="https://picsum.photos/350/350" alt="Week 1">
+        </div>
+        <div>
+            <h2>Week 1</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </section>
+    <section id="week1" class="with-sidebar">
+
+        <div>
+            <img src="https://picsum.photos/350/350" alt="Week 1">
+        </div>
+        <div>
+            <h2>Week 1</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </section>
+    <section id="week1" class="colored with-sidebar">
+
+        <div>
+            <img src="https://picsum.photos/350/350" alt="Week 1">
+        </div>
+        <div>
+            <h2>Week 1</h2>
+            <p>Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet. Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.</p>
+        </div>
+
+    </section>
+
+
+
+
+</main>
+
+<footer>
+    <p>&copy; 2025</p>
+</footer>
+
+</body>
+</html>
